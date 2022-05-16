@@ -12,7 +12,11 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
+  belongs_to :owner, class_name: 'User'
+  has_many :participating_users, class_name: 'Participant'
+  has_many :participants, through: :participating_users, source: :user
 
+  validates :participating_users, presence: true
   # para validar que los inputs deben contener datos sino no te dejara pasar
   validates :name, :description, presence: :true
   # para validar que no exista duplicidad de datos en nombres, case_insensitive sirve para ver coincidencia con mayusculas y minusculas
