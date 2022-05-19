@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   devise_scope :user do  
     get '/users/sign_out' => 'devise/sessions#destroy'     
   end
-  resources :tasks
+  resources :tasks do
+    resources :notes, only: [:create], controller: 'tasks/notes'
+  end
+
   resources :categories
   root 'tasks#index'
   # para verificar rutas desde el navegador 
