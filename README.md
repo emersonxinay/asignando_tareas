@@ -9,13 +9,13 @@ Versiones de Ruby y Rails :
 ruby 3.0.0
 rails  6.1.6 
 ```
-Desde la consola: 
-<code>
+Desde la consola en el siguiente orden: 
+```
 bundle install
-</code>
-<code>
+```
+```
 rake db:create
-</code>
+```
 ```
 rake db:migrate
 ```
