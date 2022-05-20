@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Es una web con rails para asignar tareas.
 
-Things you may want to cover:
+para levartar el proyecto: 
 
-* Ruby version
+Versiones de Ruby y Rails :
 
-* System dependencies
+ruby 3.0.0
+rails  6.1.6 
 
-* Configuration
+Desde la consola: 
+<code>
+bundle install
+rake db:create
+rake db:migrate
+rake db:seed 
+rails s 
+</code>
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
