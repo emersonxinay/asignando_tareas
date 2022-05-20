@@ -12,9 +12,17 @@ rails  6.1.6
 Desde la consola: 
 <code>
 bundle install
-rake db:create
-rake db:migrate
-rake db:seed 
-rails s 
 </code>
+<code>
+rake db:create
+</code>
+```
+rake db:migrate
+```
+```
+rake db:seed 
+```
+```
+rails s 
+```
 
